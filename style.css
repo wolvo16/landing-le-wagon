@@ -1,0 +1,102 @@
+/* Write some CSS below */
+/* style.css */
+body {
+  font-family: Overpass;
+  color: #404042;
+  font-size: 18px;
+}
+
+h1, h2, h3 {
+  font-family: Chivo;
+}
+
+a {
+  color: #1A48E3;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .3s;
+}
+
+a:hover {
+  color: #CE2FAE;
+}
+.container{
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+.banner {
+  background-image: url(images/background.jpg);
+  background-size:cover;
+  background-position: center;
+  text-align:center;
+  padding:100px;
+}
+.banner h1{
+  color:white;
+  font-size:45px;
+}
+.banner p{
+  color : gray;
+  font-size:24px;
+}
+.button-blue {
+  font-family: Overpass;
+  background-color: #1A48E3;
+  color:white;
+  padding: 16px 48px;
+  border-radius: 5px;
+}
+.button-blue:hover{
+  background-color: #0D1EC6;
+  color:white;
+}
+.card-white {
+  background-color: white;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius:4px;
+  width: 200px;
+  text-align: center;
+  padding: 24px;
+  margin: 8px;
+}
+.card-white img{
+  width:180px;
+  height:180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.footer{
+  padding: 20px;
+  background-color: #404042;
+  text-align:center;
+  color:gray;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+@media (max-width:800px) {
+  .cards{
+    grid-template-columns: 1fr;
+  }
+  .card-white{
+    width:auto;
+  }
+}
+@media (min-width:500px) {
+  .container{
+    width:400px;
+  }
+}
+@media (min-width:800px) {
+  .container{
+    width:600px;
+  }
+}
+@media (min-width:1000px) {
+  .container{
+    width: 800px;
+  }
+}
